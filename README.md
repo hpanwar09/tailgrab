@@ -14,7 +14,7 @@ Install the gem and add to the application's Gemfile by executing:
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install tailgrab
 
 ## Usage
 

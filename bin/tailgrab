@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
-require "tailgrab"
-Tailgrab.parse(ARGV)
+$LOAD_PATH.unshift(File.expand_path("../tailgrab", __dir__))
+require "../lib/tailgrab"
+puts "Tailgrab running"
+Tailgrab::CLI.parse(ARGV)
