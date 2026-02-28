@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Himanshu Panwar"]
   spec.email = ["hpanwar@g2.com"]
 
-  spec.summary = "Basic CLI to save your last n useful terminal commands in a text file"
-  spec.description = "Save your last n useful terminal commands with timestamp and access them easily"
+  spec.summary = "Save and recall your terminal commands"
+  spec.description = "Save and recall your terminal commands with timestamps"
   spec.homepage = "https://github.com/hpanwar09/tailgrab"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
