@@ -8,10 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Himanshu Panwar"]
   spec.email = ["hpanwar@g2.com"]
 
-  spec.summary = "CLI tool to save and recall your terminal commands"
-  spec.description = "Tailgrab reads your shell history (zsh/bash), saves commands to a local " \
-                     "file with timestamps, and lets you recall, filter, or copy them to your " \
-                     "clipboard. Install the gem and use the 'grab' command to get started."
+  spec.summary = "Save and recall your terminal commands"
+  spec.description = "Save and recall your terminal commands with timestamps"
   spec.homepage = "https://github.com/hpanwar09/tailgrab"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
