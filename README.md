@@ -1,35 +1,43 @@
 # Tailgrab
 
-TODO: Delete this and the text below, and describe your gem
+Save and recall your terminal commands.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tailgrab`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Install
 
-## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install tailgrab
+```
+gem install tailgrab
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+grab 5          # Save last 5 commands from shell history
+grab last       # Copy last saved command to clipboard
+grab last 3     # Show last 3 saved commands
+grab all        # Show all saved commands
+grab day        # Show commands saved in the last 24 hours
+grab wipe       # Clear all saved commands
+grab help       # Show help
+```
+
+Commands are saved to `~/tailgrab.txt` with timestamps.
+
+## Shell Setup
+
+For best results with multiple terminals, add to your `~/.zshrc`:
+
+```
+setopt INC_APPEND_HISTORY
+```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tailgrab.
+```
+bundle install
+bundle exec rake        # runs specs + rubocop
+bundle exec rake install  # install locally
+```
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+MIT
