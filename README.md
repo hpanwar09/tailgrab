@@ -1,5 +1,7 @@
 # Tailgrab
 
+[![Gem Version](https://badge.fury.io/rb/tailgrab.svg)](https://rubygems.org/gems/tailgrab)
+
 A CLI tool that reads your shell history (zsh/bash), saves commands to a local file
 with timestamps, and lets you recall, filter, or copy them to your clipboard.
 
